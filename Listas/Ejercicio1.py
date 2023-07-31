@@ -5,9 +5,6 @@
 #c. Promedio
 #d. Mayor
 #e. Menor
-#f. Ordenar ascendente (No perder el arreglo original; el del punto a)
-#g. Ordenar descendente (No perder el arreglo original; el del punto a)
-import random
 
 def lista1():
     suma=0
@@ -35,23 +32,3 @@ def lista1():
     print(f'El promedio es {promedio}')
 
 lista1()
-
-def mediana(lista):
-    if  (len(lista))%2==0:
-        lista=(lista[(len(lista)//2)-1]+lista [len(lista)//2])/2
-    else:
-        lista=lista[(len(lista)//2)]
-        
-        return lista
-    
-def moda(lista):   
-    ind=0
-    for num in lista:
-        cont=0
-        for f in lista:
-            if num == f:
-                cont+=1
-            if cont > ind:
-                ind=cont
-    moda=num
-    return moda
